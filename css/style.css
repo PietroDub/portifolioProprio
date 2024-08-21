@@ -83,10 +83,10 @@ span{
     align-items: center;
 }
 
-.home-img {
-    border-right: solid 0.6rem var(--main-color);
+.home-img{
+    border-left: solid 0.6rem var(--main-color);
     border-bottom: solid 0.6rem var(--main-color);
-    border-image: linear-gradient(135deg,transparent 50%,var(--main-color)) 1;
+    border-image: linear-gradient(225deg,transparent 50%,var(--main-color)) 1;
     border-radius: 5rem;
 }
 
@@ -99,7 +99,6 @@ span{
 
 .home-img img, .about-img img {
     width: 100%;
-    
 }
 .about{
     background-color: var(--bg-color2);
@@ -448,7 +447,13 @@ footer {
 /* medium tablet */
 /* Lg nootebook */
 @media (min-width: 992px){
-
+    .home img, .about-img{
+        max-width: 35%;
+    }
+    .services-container{
+        flex-direction: row;
+        gap: 1.2rem;
+    }
     header{
         background-color: var(--color-04);
     }
@@ -457,9 +462,21 @@ footer {
 /* Lg nootebook */
 /* Extra large Desktop */
 @media (min-width: 1200px){
+    .home-img, .about-img {
+        max-width: 100%;
+    }
 
+.home-content h1{
+    font-size: 2.7rem;
+}
+.home-content h3{
+    font-size: 2rem;
+}
     header{
         background-color: var(--color-05);
+    }
+    .portfolio-container{
+        grid-template-columns: auto auto auto;
     }
 }
 /* Extra large Desktop */
