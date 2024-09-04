@@ -93,18 +93,19 @@ span{
 }
 
 .home-img{
-    border-left: solid 0.6rem var(--main-color);
+    /* border-left: solid 0.6rem var(--main-color); */
     border-bottom: solid 0.6rem var(--main-color);
     border-image: linear-gradient(225deg,transparent 50%,var(--main-color)) 1;
     border-radius: 5rem;
+    margin: 0;
 }
 
-.about-img {
+/* .about-img {
     border-left: solid 0.6rem var(--main-color);
     border-bottom: solid 0.6rem var(--main-color);
     border-image: linear-gradient(225deg,transparent 50%,var(--main-color)) 1;
     border-radius: 5rem;
-}
+} */
 
 .home-img img, .about-img img {
     width: 100%;
@@ -221,6 +222,7 @@ span{
     flex-direction: row;
     justify-content: space-evenly;
     gap: 10px;
+    max-width: 100em;
 }
 .others-box{
     display: flex;
