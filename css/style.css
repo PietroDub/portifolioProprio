@@ -2,7 +2,7 @@
 
 
 :root{
-    --main-color: #00eeff;
+    --main-color: #ff0000;
     --text-color: #ffffff;
     --bg-color1: #1f242d;
     --bg-color2: #323946;
@@ -201,7 +201,7 @@ span{
     transition: 0.5s;
 }
 .services-box a:hover{
-    color: #00eeff;
+    color: var(--main-color);
 }
 
 .services-box h3{
@@ -252,7 +252,7 @@ span{
     transition: 0.5s;
 }
 .others-box a:hover{
-    color: #00eeff;
+    color: var(--main-color);
 }
 .others-box h3{
     font-size: 1.5rem;
